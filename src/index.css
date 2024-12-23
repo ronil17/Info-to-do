@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 2rem; /* Added padding for spaciousness */
+}
+
+h1 {
+  font-size: 3.5em; /* Slightly larger font size */
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 1.5rem; /* Increased spacing below heading */
+}
+
+button {
+  border-radius: 12px; /* More rounded corners */
+  border: 1px solid transparent;
+  padding: 0.8em 1.5em; /* Increased padding for more spacious buttons */
+  font-size: 1.1em; /* Slightly larger font size */
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s, transform 0.1s; /* Added smooth scaling effect */
+}
+button:hover {
+  border-color: #646cff;
+  transform: scale(1.05); /* Adds a hover effect for better interactivity */
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.task-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem; /* Adds spacing between stats */
+  margin-bottom: 2rem; /* Adds spacing below stats */
+  font-size: 1.2em; /* Slightly larger font size */
+}
+
+.task-list {
+  width: 100%;
+  max-width: 600px; /* Restrict list width for better readability */
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #333;
+  border-radius: 8px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem; /* Adds spacing between tasks */
+  padding: 1rem;
+  background-color: #444;
+  border-radius: 6px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+  .task-list {
+    background-color: #f0f0f0;
+  }
+  .task-item {
+    background-color: #e0e0e0;
+  }
+}
